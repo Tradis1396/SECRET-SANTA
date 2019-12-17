@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>secret santa</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6">
+                <form onsubmit="tologin(); return false">
+                    <div class="form-group">
+                        <h3>LOGIN</h3>
+                        <br>
+                        <br>
+                        <br>
+                        <label for="emailLoginId">Email address</label>
+                        <input type="email" class="form-control" id="emailLoginId" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordLoginId">Password</label>
+                        <input type="password" class="form-control" id="passwordLoginId" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitLoginId">Submit</button>
+                </form>
+            </div>
+            <div class="col-xl-6">
+                <h3>REGISTER</h3>
+                <br>
+                <br>
+                <br>
+                <form class="needs-validation" onsubmit="toserver(); return false" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="usernameId">User Name</label>
+                            <input type="text" class="form-control" id="usernameId" placeholder="First name"
+                                value="Mark" required>
+                            <div class="valid-tooltip">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3 float-right">
+                            <label for="phoneId">Phone Number</label>
+                            <input type="tel" class="form-control " id="phoneId" placeholder="10 digit" required>
+                            <div class="valid-tooltip">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label for="emailId">Email address</label>
+                                <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone
+                                    else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordId">Password</label>
+                                <input type="password" class="form-control" id="passwordId" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitId">Submit</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="santa-login-register.js"></script>
+</body>
+
+</html>

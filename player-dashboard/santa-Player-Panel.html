@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>player panel</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+
+<body>
+    <div id="playerId">
+
+        <script>
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", "http://localhost:3000/playerData");
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var responseData = this.responseText;
+                    responseData = JSON.parse(responseData);
+                    console.log(this.responseText);
+                }
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
